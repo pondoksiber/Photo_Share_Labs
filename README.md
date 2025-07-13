@@ -2,6 +2,8 @@
 
 A deliberately vulnerable file upload application for security education.
 
+<img width="432" height="391" alt="photoshare" src="https://github.com/user-attachments/assets/6b70fc85-8ffd-4470-92f8-5a7b613e20bb" />
+
 ## WARNING
 This application is intentionally vulnerable. Never use in production.
 
@@ -47,4 +49,5 @@ Use responsibly in controlled environments.
 **Just copy the text above and paste it into your README.md file on GitHub!** 
 
 This avoids the application error while giving you all the essential information. You can always expand it later directly on GitHub. 🚀
+
 
