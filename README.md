@@ -2,6 +2,7 @@
 
 A deliberately vulnerable file upload application for security education.
 
+# Screenshot
 <img width="432" height="391" alt="photoshare" src="https://github.com/user-attachments/assets/6b70fc85-8ffd-4470-92f8-5a7b613e20bb" />
 
 ## WARNING
