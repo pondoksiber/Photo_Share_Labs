@@ -9,8 +9,8 @@ This application is intentionally vulnerable. Never use in production.
 ```bash
 git clone https://github.com/yourusername/photoshare-vulnerable-lab.git
 cd photoshare-vulnerable-lab
-npm install
-npm start
+chmod +x
+./autodeploy.sh
 ```
 
 ## Vulnerabilities
